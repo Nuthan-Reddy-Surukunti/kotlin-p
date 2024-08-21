@@ -64,5 +64,6 @@ fun main()
     num[0]= 10
     print(num)
     for (num in )
+    
 
 }
