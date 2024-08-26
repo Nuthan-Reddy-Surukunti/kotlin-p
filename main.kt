@@ -91,6 +91,73 @@ fun main()
     println("ME: $a*=$b =${a}")
     a/=b
     println("DE:$a/=$b = ${a}")
-    
+     val temperature = 21
+    if (temperature>20){
+        println("warm day")
+    }
+    else {
+        println("cool day")
+    }
+    val marks = 60
+    if (marks >=90){
+        println("A grade")
+    }
+    else if (marks>=85){
+        println("B gade")
+    }
+    else if (marks >=70){
+        println("C gade")
+    }
+    else{
+        println("Unqualified")
+    }
+    val Value1 = 10
+    val Value2 = 20
+    var Operation = "*"
+    if (Operation =="+"){
+        println(Value1+Value2)
+    }
+    else if (Operation == "-"){
+        println(Value1-Value2)
+    }
+    else if (Operation == "*"){
+        println(Value1*Value2)
+    }
+    else{
+        println(Value1/Value2)
+    }
+}
+ val age = 19
+    if (age < 13){
+        println("Child")
+    }
+    else if (age in 13..19){
+        println("Teenager")
+    }
+    else if (age in 20..64){
+        println("Adult")
+    }
+    else {
+        println("You are Senior")
+    }
+    val dayOfWeek = 5
+    val DayName = when(dayOfWeek){
+        1-> "Monday"
+        2 -> "Tuesday"
+        3->"Wednesday"
+        4 -> "Thusday"
+        5 -> "Friday"
+        6 -> "Saturday"
+        7 ->"Sunday"
+        else ->"Invalid"
+        
+    }
+    println(DayName)
+    val number = 9
+    when{
+        number % 2 ==0 -> println("Even Number")
+        number %2 != 0 -> println("Odd Number")
+        else ->println("Error")
+    }
 
 }
