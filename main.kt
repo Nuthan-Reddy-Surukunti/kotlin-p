@@ -63,7 +63,34 @@ fun main()
     println("second number: $secondWord")
     num[0]= 10
     print(num)
-    for (num in )
+    // Arithmetic OP
+    var a = 10
+    var b = 25
+    var Add = a+b
+    println("Add :$a+$b:$Add")
+    var Sub = a-b
+    println("Sub : $a-$b:$Sub")
+    var Mul = a*b
+    println("Mult : $a*$b:$Mul")
+    var Dev = a/b
+    println("Division : $a/$b : $Dev")
+    println("Mod : $a//$b:${a%b}")
+    //Relational OP
+    println("GT : $a>$b:${a>b}")
+    println("LT : $a<$b:${a<b}")
+    println("GTE : $a>=$b:${a>=b}")
+    println("LTE : $a<=$b:${a<=b}")
+    println("EE : $a==$b:${a==b}")
+    println("NE: $a!=$b:${a!=b}")
+    //Assignment OP
+    a+=b
+    println("AE : $a+=$b:$a")
+    a-=b
+    println("NE : $a-=$b=${b}")
+    a*=b
+    println("ME: $a*=$b =${a}")
+    a/=b
+    println("DE:$a/=$b = ${a}")
     
 
 }
