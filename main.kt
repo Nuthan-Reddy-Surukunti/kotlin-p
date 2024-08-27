@@ -159,5 +159,37 @@ fun main()
         number %2 != 0 -> println("Odd Number")
         else ->println("Error")
     }
+         for (i in 1..10){
+         println(i)
+
+     }
+    println("End")
+    for (i in 1 until 10){
+        println(i)
+    }
+    for (i in 5 downTo 1){
+        println(i)
+    }
+  for (i in 5 downTo 1 step 2){
+      println(i)
+  }
+  val fruits = listOf("Apple,banana,orange")
+    for (fruit in fruits){
+        println(fruit)
+    }
+    for (index in fruits.indices){
+        println("index of $index:${fruits[index]}")
+    }
+      var value = 0
+    while (value>0){
+        value--
+        println("value is:$value")
+    }
+    do {
+        println(value)
+        value++
+    }
+        while (value<=5)
+
 
 }
