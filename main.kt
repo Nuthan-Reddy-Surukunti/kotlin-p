@@ -190,6 +190,91 @@ fun main()
         value++
     }
         while (value<=5)
+        fun sum(a:Int = 10,  b:Int = 20){
+    val c =a+b
+    println(c)
+}
+fun main(){
+    sum(20,50)
+    sum()
+}
+fun main(args: Array<String>){
+    val a= 10
+    val b= 20
+    val result = sum(a,b)
+    println(result)
+}
+fun sum(a:Int, b:Int):Int{
+    val x = a+b
+    return x
+}
+//create a fun to convert tem from celsius to fahrenheit
+fun main() {
+    println("Choose an option:")
+    println("1. Convert °C to °F")
+    println("2. Convert °F to °C")
+    val option = Integer.valueOf(readLine())
+
+    if (option == 1) {
+        println("Enter the value of Celsius to convert:")
+        val c = readLine()?.toDoubleOrNull()
+        if (c != null) {
+            val fahrenheit = celsiusToFahrenheit(c)
+            println("After conversion of $c°C to °F, we get %.1f°F.".format(fahrenheit))
+        } else {
+            println("Please enter a valid number for Celsius.")
+        }
+    } else if (option == 2) {
+        println("Enter the value of Fahrenheit to convert:")
+        val f = readLine()?.toDoubleOrNull()
+        if (f != null) {
+            val celsius = fahrenheitToCelsius(f)
+            println("After conversion of $f°F to °C, we get %.1f°C.".format(celsius))
+        } else {
+            println("Please enter a valid number for Fahrenheit.")
+        }
+    } else {
+        println("Please choose a valid option: 1 or 2.")
+    }
+}
+
+fun celsiusToFahrenheit(c: Double): Double {
+    return (c * 9 / 5) + 32
+}
+
+fun fahrenheitToCelsius(f: Double): Double {
+    return (f - 32) * 5 / 9
+}
+
+
+
+// create a programme for factorial and fibonacci series using recursive funtions
+//factorial
+fun factorial(n: Int): Long {
+    return if (n == 0 || n == 1) 1 else n * factorial(n - 1)
+}
+
+fun main() {
+    println("Enter a number to calculate its factorial:")
+    val num = Integer.valueOf(readLine())
+    val result = factorial(num)
+    println("The factorial of $num is $result")
+}
+
+// fibonacci series
+fun fibonacci(n: Int): Int {
+    return if (n <= 1) n else fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+fun main() {
+    println("Enter the number of terms for the Fibonacci series:")
+    val terms = Integer.valueOf(readLine())
+    println("Fibonacci series up to $terms terms:")
+
+    for (i in 0 until terms) {
+        print("${fibonacci(i)} ")
+    }
+}
 
 
 }
